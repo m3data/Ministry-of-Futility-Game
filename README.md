@@ -38,6 +38,20 @@ The `Plot.md` file is structured as follows:
 - **Choices**: Each scene offers multiple `choices`, where each choice links to a different `target` scene.
 - **Actions**: Optional actions that can be performed in a scene such as `increaseFutility` or `decreaseFutility`. A delimiter `;` is used to separate `actions` from the `target`.
 
+### Structure of scene:
+```
+## Scene Name
+title: ;Scene Title;
+location: ;Location in the Ministry;
+scene description: ;A scene description;
+context: ;Scene context and associated dialogue;
+
+Choices:
+- Description of the choice 1: Target Scene of Choice 1; actionOne
+- Description of the choice 2: Target Scene of Choice 2; actionOne, actionTwo, actionThree
+- Description of the choice 3: Target Scene of Choice 3; actionOne, actionTwo
+```
+
 #### Example
 
 ```markdown
