@@ -126,6 +126,16 @@ Choices:
 - Ask for help: Help Request; increaseWisdom, decreaseFutility
 - Give up and explore on your own: Lobby; increaseFutility, increaseWisdom
 
+## Help Request
+title: ;The receptionist's response;
+location: ;Ministry Reception;
+scene description: ;You ask the receptionist for help with Form 27B/6, hoping for some guidance.;
+context: ;The receptionist looks at your form and shakes their head. "You filled it out in the wrong color ink. You'll have to start over with the correct color. And don't forget to get it stamped by the Department of Human Resourcing Resources, countersigned by the Vice Deputy Assistant to the Assistant Deputy Vice Minister, and then bring it back here.";
+
+Choices:
+- Fill out the form again: Form Filling Again; increaseFutility
+- Give up and explore on your own: Lobby; increaseFutility
+
 ## Form Filling Again
 title: ;The dreaded Form 27B/6 (again);
 location: ;Ministry Reception;
@@ -759,7 +769,7 @@ Choices:
 title: ;The cycle of futility;
 location: ;Work Cubicle;
 scene description: ;You sit at your desk, staring at the screen, post-it notes and half-empty coffee cups littering the desk.;
-context: ;Your mind wanders and you reflect on what you experienced in the Ministry garden... like, what the fuck, a speaking gnome?;
+context: ;Your mind wanders and you reflect on what you experienced in the Ministry garden... like, what the f**k, a speaking gnome?;
 
 Choices:
 - Return to the garden to explore the mushroom: Mushroom Investigation Again; increaseWisdom, increaseWoo
