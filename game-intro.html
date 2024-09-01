@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministry of Futility - Welcome</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <script>
+        // Check for touch events (to detect mobile)
+        if ('ontouchstart' in document.documentElement) {
+            document.querySelectorAll('.redacted').forEach(function(element) {
+                element.addEventListener('click', function() {
+                    // Toggle the active state on click
+                    element.classList.toggle('active');
+                });
+            });
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+    <h1>Welcome to the Ministry of Futility</h1>
+    <p><em>Where every step forward is two steps back.</em></p>
+    <div class="brutalist-box">
+        <div class="classified">TOP SECRET</div>
+        <h2 class="OpInstructions">Operative Instructions: How to Navigate the Ministry</h2>
+        
+        <div class="document">
+            <div class="instruction">
+                <span class="instruction-title">1. Decision Making Protocol:</span>
+                <div class="redacted-content">
+                    <span class="redacted">Navigate through the Ministry by making decisions at every turn. Each choice may lead to unforeseen consequences.</span>
+                </div>
+            </div>
+            <div class="instruction">
+                <span class="instruction-title">2. Metric Observation:</span>
+                <div class="redacted-content">
+                    <span class="redacted">Monitor your futility and wisdom meters vigilantly. These metrics fluctuate with each action taken within the Ministry.</span>
+                </div>
+            </div>
+            <div class="instruction">
+                <span class="instruction-title">3. Error Analysis:</span>
+                <div class="redacted-content">
+                    <span class="redacted">Mistakes are opportunities for growth. Wrong choices may inadvertently lead to the correct path. Embrace the inherent chaos of the system.</span>
+                </div>
+            </div>
+            <div class="instruction">
+                <span class="instruction-title">4. Confidential Information Retrieval:</span>
+                <div class="redacted-content">
+                    <span class="redacted">Uncover hidden pathways and decipher the enigmatic mysteries that permeate the Ministry's structure.</span>
+                </div>
+            </div>
+            <div class="instruction">
+                <span class="instruction-title">5. Absurdity Acceptance Protocol:</span>
+                <div class="redacted-content">
+                    <span class="redacted">The Ministry operates on principles that defy conventional logic. Embrace the futility because the only way through is through.</span>
+                </div>
+            </div> 
+            <div class="instruction">
+                <span class="instruction-title">6. Self-Reflection Mandate:</span>
+                <div class="redacted-content">
+                    <span class="redacted">Contemplate the nature of your roles and explore the philosophical underpinnings of wisdom, woo and futility within Ministry.</span>
+                </div>
+            </div>
+            <div class="instruction">
+                <span class="instruction-title">7. Equilibrium Maintenance:</span>
+                <div class="redacted-content">
+                    <span class="redacted">Strive to achieve a precarious balance between accumulating wisdom and managing futility. Or just fully embrace the chaotic nature of the system and observe it unfurl.</span>
+                </div>
+            </div>
+            <div class="instruction">
+                <span class="instruction-title">8. Mission Completion:</span>
+                <div class="redacted-content">
+                    <span class="redacted">Persist until you reach the culmination of your journey. Your choices throughout will shape your Ministry experience. May the Woo be with you!</span>
+                </div>
+            </div>
+            <div class="button-container">
+                <a href="index.html?visited=true">
+                    <button class="start-button">Start Game</button>
+                </a>
+            </div>  
+    </div>
+    
+</div>
+</body>
+</html>

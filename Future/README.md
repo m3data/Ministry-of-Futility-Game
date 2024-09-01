@@ -1,0 +1,2 @@
+## Future MOF Game
+This is a game that I am currently working on. It is a text-based game that is based on the MOF universe. The game is still in development and I am currently working on the story and the mechanics of the game. I will update this README file as I make progress on the game. Stay tuned for more updates!
