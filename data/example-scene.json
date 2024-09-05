@@ -1,0 +1,54 @@
+{
+    "scenes": [
+        {
+          "id": "start",
+          "title": "Your arrival at the Ministry of Futility",
+          "location": "Ministry Entrance",
+          "island": "None",
+          "sceneDescription": "You arrive at the entrance of the Ministry of Futility for your first day of work. The building looms before you, a monument to the brutalism of bureaucracy. You pause, take a deep breath, and step inside through the imposing doors.",
+          "context": "The lobby is vast and disorienting, with harsh lighting and a sense of unease. You see a reception desk in the distance and corridors leading off in different directions. The air is filled with the sound of shuffling papers and the distant hum of computers.",
+          "choices": [
+            {
+              "text": "Enter the lobby",
+              "target": "lobby",
+              "requiredAttributes": [
+                { "name": "wisdom", "value": 0 },
+                { "name": "creativity", "value": 0 },
+                { "name": "gullibility", "value": 0 },
+                { "name": "compliance", "value": 0 }
+              ],
+              "attributeChanges": [
+                { "name": "wisdom", "amount": 0 },
+                { "name": "creativity", "amount": 0 },
+                { "name": "gullibility", "amount": 0 },
+                { "name": "compliance", "amount": 0 }
+              ],
+              "coreMetrics": [
+                { "type": "woo", "value": 0 },
+                { "type": "futility", "value": 0 }         
+                ]
+            },
+            {
+              "text": "Talk to the building security guard",
+              "target": "security-guard",
+              "requiredAttributes": [
+                { "name": "wisdom", "value": 0 },
+                { "name": "creativity", "value": 0 },
+                { "name": "gullibility", "value": 0 },
+                { "name": "compliance", "value": 0 }
+              ],
+              "attributeChanges": [
+                { "name": "wisdom", "amount": 0 },
+                { "name": "creativity", "amount": 0 },
+                { "name": "gullibility", "amount": 0 },
+                { "name": "compliance", "amount": 0 }
+              ],
+              "coreMetrics": [
+                { "type": "woo", "value": 0 },
+                { "type": "futility", "value": 0 }         
+                ]
+            }
+          ]
+        }
+    ]
+}

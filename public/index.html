@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ministry of Futility</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="sticky-header">
+    <div class="header-content">
+      <h1 class="glitch-text">MINISTRY OF FUTILITY</h1>
+      <p>A Bureaucratic Nightmare</p>
+    </div>
+  </header>
+
+  <!-- Game Metrics -->
+  <div class="game-metrics">
+    <div class="metric" id="futility-meter">
+      <div class="meter-background">
+        <div class="meter-fill" id="futility-meter-fill"></div>
+        <div class="metric-label">Futility</div>
+      </div>
+    </div>
+    <div class="metric" id="woo-meter">
+      <div class="meter-background">
+        <div class="meter-fill" id="woo-meter-fill"></div>
+        <div class="metric-label">Woo</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Game Content -->
+  <div id="game-content">
+    <!-- Scene Info -->
+    <div id="scene-info">
+      <div id="scene-title"></div>
+      <div id="scene-location"></div>
+    </div>
+
+    <!-- Scene Description -->
+    <div id="scene-description" class="scene-description"></div>
+
+    <!-- Scene Context -->
+    <div id="scene-context" class="scene-description"></div>
+
+    <!-- Player attributes -->
+    <div id="player-attributes">
+      <div class="attribute">
+        <div class="meter-background">
+          <div id="wisdom-meter" class="meter"></div>
+        </div>
+        Wisdom
+      </div>
+      <div class="attribute">
+        <div class="meter-background">
+          <div id="creativity-meter" class="meter"></div>
+        </div>
+        Creativity
+      </div>
+      <div class="attribute">
+        <div class="meter-background">
+          <div id="compliance-meter" class="meter"></div>
+        </div>
+        Compliance
+      </div>
+      <div class="attribute">
+        <div class="meter-background">
+          <div id="gullibility-meter" class="meter"></div>
+        </div>
+        Gullibility
+      </div>
+    </div>
+
+    <!-- Choices -->
+    <div id="choices">
+      <!-- Dynamically generated choice buttons will be placed here -->
+    </div>
+
+    <!-- Next Button -->
+    <div id="next-button-container">
+      <button id="next-button" class="next-button">Next &gt;&gt;&gt;</button>
+    </div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,69 +1,7 @@
-# Ministry of Futility Plot
-
-## Primary Locations
-
-These are the primary locations in the Ministry of Futility where the protagonist will navigate through the bureaucratic maze. They represent different aspects of the bureaucratic system and the challenges faced by the protagonist.
-
-### Entrance
-
-The entrance to the Ministry of Futility is a towering monolith of gray concrete and tinted glass, designed to intimidate and confuse visitors. The brutalist architecture features sharp angles and imposing columns that seem to defy both gravity and logic. The massive doors are unnecessarily heavy, requiring significant effort to open, symbolising the difficulty of navigating bureaucracy.
-
-### Lobby
-
-Upon entering, visitors find themselves in a cavernous lobby with impossibly high ceilings that seem to disappear into shadows. The space is sparsely furnished with uncomfortable-looking chairs arranged in perfectly straight lines. The walls are adorned with portraits of stern-faced bureaucrats and incomprehensible flowcharts. The lighting is a harsh fluorescent that flickers occasionally, creating an unsettling atmosphere.
-
-### Reception
-
-The reception area features a long, curved desk made of polished but cheap-looking laminate. Behind it sits a bored-looking receptionist, dwarfed by stacks of papers and outdated computer equipment. The area is lit by a combination of harsh overhead lights and dim desk lamps, creating an uneven and disorienting illumination.
-
-### Office of Redundant Redundancies
-
-This office is a maze of identical cubicles, each one a perfect copy of the last. The walls are a pale, forgettable beige, and the carpet is a muted gray that seems to absorb both light and sound. The air is filled with the constant hum of computers and the rhythmic sound of stamps hitting paper. The fluorescent lighting buzzes incessantly, adding to the monotonous atmosphere.
-
-### Department of Circular Logic
-
-The Department of Circular Logic is designed as a perfect circle, with corridors that lead back to where they started. The walls are covered in mirrors, creating an infinite reflection of confusion. Desks are arranged in concentric circles, each facing a different direction. The lighting changes subtly as you move through the space, making it difficult to maintain a sense of direction or time.
-
-### Bureau of Counterproductive Measures
-
-This bureau is intentionally designed to hinder productivity. The chairs are slightly too high for the desks, the desks are angled just enough to make writing uncomfortable, and the computers are positioned to cause neck strain. The room is overly warm, with no visible thermostats. The windows offer a view of a brick wall just a few feet away.
-
-### Ministry Basement
-
-The hidden underbelly of the Ministry, where the Human-Centered Design Underground operates. It’s a place of secrecy and quiet rebellion, far from the prying eyes of the official Ministry. More generally it is a labyrinth of dimly lit corridors and forgotten storage rooms. The air is musty, and the walls are lined with filing cabinets that haven't been opened in decades. Exposed pipes run along the ceiling, occasionally dripping water into strategically placed buckets. The flickering fluorescent lights cast long shadows, creating an eerie atmosphere.
-
-### Meeting Room
-
-The meeting room is a sterile space with uncomfortable chairs arranged around an unnecessarily large table. The walls are bare except for a whiteboard covered in incomprehensible diagrams. A projector hangs from the ceiling, perpetually out of focus. The room is always slightly too cold, encouraging shorter meetings (which ironically never happen).
-
-### Work Cubicle
-
-The protagonist’s personal workspace, a small, confined area where they often reflect on the futility of their tasks. The work cubicle represents the isolation and monotony of life within the Ministry. The typical work cubicle is a claustrophobic space with high walls that block out natural light but do nothing to muffle the sounds of neighboring colleagues. The desk is cluttered with outdated office equipment and stacks of papers. A small, wilting plant sits in the corner, a futile attempt at personalising the space and adding some warmth and life.
-
-### Bureaucratic Labyrinth
-
-Description: An abstract location representing the confusing and endless nature of the bureaucratic system. It’s a maze of corridors and dead ends, symbolising the protagonist’s struggle to find purpose in a system designed to prevent it. This abstract location manifests as an endless series of identical corridors, each leading to more corridors. The walls are lined with doors, most of which are locked or lead to nowhere. The lighting is inconsistent, with some areas brightly lit and others in near darkness. The floor is an optical illusion pattern that seems to shift under your feet.
-
-### Ministry Cafeteria
-
-A bleak and uninspiring cafeteria where employees gather to eat tasteless food and engage in meaningless small talk. The cafeteria is a place of forced social interaction and superficial camaraderie. It is a large, echo-filled room with long tables and uncomfortable plastic chairs. The walls are a sickly shade of green, allegedly chosen to suppress appetite. The food counter offers a variety of unidentifiable dishes, all in shades of beige and gray. Vending machines line one wall, perpetually out of order or stocked with expired snacks.
-
-### Ministry Garden
-
-A neglected and overgrown garden within the Ministry, a stark contrast to the sterile interior. The garden is a place of quiet reflection and escape from the suffocating bureaucracy of the building. The garden is a small, overgrown patch of green. Weeds grow between cracked paving stones, and a rusted bench sits beneath a gnarled old tree. Despite its neglected state, it offers a rare glimpse of nature and a moment of respite from the oppressive bureaucracy inside. The Ministry mythology has it that the garden has a speaking gnome statue that offers cryptic advice for those willing to listen. And at certain hard to predict lunar phases woo woo mushrooms are in season.
-
-### Department of Existential Dread
-
-A department dedicated to questioning the purpose of work and existence. Employees here grapple with the futility of their tasks and the meaninglessness of their roles. It’s a place of deep contemplation and despair. This department is located in a windowless room with low ceilings and dim, flickering lights. The walls are painted a deep, oppressive gray. Motivational posters with nihilistic messages hang crookedly on the walls. The furniture is mismatched and uncomfortable, designed to induce physical discomfort to match the mental anguish of existential contemplation.
-
-...
-
----
-
-# PLOT_START
+# Scene Data
 
 ## Start
-title: ;Your arrival at the Ministry of Futility;
+title: Your arrival at the Ministry of Futility;
 location: ;Ministry Entrance;
 scene description: ;You arrive at the entrance of the Ministry of Futility for your first day of work. The building looms before you, a monument to the brutalism of bureaucracy. You pause, take a deep breath, and step inside through the imposing doors.;
 context: ;The lobby is vast and disorienting, with harsh lighting and a sense of unease. You see a reception desk in the distance and corridors leading off in different directions. The air is filled with the sound of shuffling papers and the distant hum of computers.;
@@ -103,7 +41,7 @@ context: ;"Job assignment?" the receptionist sighs. You'll need to fill out Form
 Choices:
 - Fill out Form 27B/6: Form Filling; increaseFutility
 - Ask for directions to the Department of Human Resourcing Resources: Directions; increaseWisdom
-- Give up and explore on your own: Lobby; increaseFuility
+- Give up and explore on your own: Lobby; increaseFutility
 
 ## Directions
 title: ;Map to nowhere;
@@ -731,7 +669,7 @@ scene description: ;You return to your cubicle, feeling the weight of the bureau
 Choices:
 - Return to the garden to explore the mushroom: Mushroom Investigation; increaseWisdom, increaseWoo
 - Continue your work: Work Cubicle Existential Dread; increaseFutility
-- Quit and choose a different life path; Wise End; increaseWisdom
+- Quit and choose a different life path: Wise End; increaseWisdom
 
 ## Work Cubicle Existential Dread
 title: ;The cycle of futility;
@@ -742,7 +680,7 @@ context: ;Your mind wanders and you reflect on the gnome's words...;
 Choices:
 - Return to the garden to explore the mushroom: Mushroom Investigation; increaseWisdom, increaseWoo
 - Go on a sabbatical to find yourself: Sabbatical; increaseWisdom, decreaseFutility
-- Quit and choose a different life path; Wise End; increaseWisdom
+- Quit and choose a different life path: Wise End; increaseWisdom
 
 ## Mushroom Investigation
 title: ;The woo woo mushroom;
@@ -774,7 +712,7 @@ context: ;Your mind wanders and you reflect on what you experienced in the Minis
 Choices:
 - Return to the garden to explore the mushroom: Mushroom Investigation Again; increaseWisdom, increaseWoo
 - Go on a sabbatical to find yourself: Sabbatical; increaseWisdom, decreaseFutility
-- Quit and choose a different life path; Wise End; increaseWisdom
+- Quit and choose a different life path: Wise End; increaseWisdom
 
 ## Mushroom Investigation Again
 title: ;Surely this could be dangerous?;
