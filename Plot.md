@@ -628,7 +628,7 @@ context: ;You spend your days contemplating the futility of contemplating futili
 
 Choices:
 - Continue your career in existential dread: Recursive Despair; increaseWisdom, decreaseFutility
-- Seek transfer to a less philosophical department: Lobby; increaseFutility
+- Seek transfer to a less philosophical department: Departmental Transfer; increaseFutility
 
 ## Existential Department Ending
 title: ;The Final Embrace of Dread;
@@ -695,7 +695,7 @@ Choices:
 ## Garden Memoir Review
 title: ;Reviewing Your Memoirs;
 location: ;Ministry Garden;
-scene description: ;You sit in the garden, surrounded by the quiet beauty of nature contained within the uncurated garden. The sun filters through the leaves, casting dappled shadows on the ground.;
+scene description: ;You sit in the garden, surrounded by the quiet beauty of nature contained within the uncurated garden. The sun filters through the leaves, casting weird shadows on the ground.;
 context: ;You take a moment to review your memoirs, reflecting on the journey that brought you to this point. These reflections capture the essence of your journey through the Ministry of Futility.;
 
 Choices:
@@ -1115,7 +1115,7 @@ context: ;Your rebellion against futility has not gone unnoticed. You're summone
 
 Choices:
 - Embrace meaninglessness: Existential Department; increaseFutility, decreaseWisdom
-- Choose unemployment: None; quiteGame
+- Choose unemployment: None; quitGame
 - Become a consultant: Consultant; increaseFutility, decreaseWisdom
 - Go to the Ministry garden to contemplate: Ministry Garden; increaseWisdom
 

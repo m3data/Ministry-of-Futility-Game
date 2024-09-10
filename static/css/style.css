@@ -101,9 +101,10 @@ p {
   align-items: center;
 }
 
-.header-title {
-  font-size: 1.5em;
-  margin: 0 0 10px 0;
+.header-subtitle {
+  font-size: 1.2em;
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 /* Metric styling */
@@ -132,7 +133,7 @@ p {
   position: relative;
 }
 
-#futility-meter { background-color: #7d7d7d; }
+#futility-meter { background-color: #fc8080; }
 #wisdom-meter { background-color: #9d00ff; }
 #woo-meter { 
   background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
