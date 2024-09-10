@@ -179,6 +179,9 @@ function displayStoryContent(title, context, choices) {
             }
             
             actions.forEach(act => {
+                if (act === 'resetGame') {
+                    window.state.resetGame();  // Call state function to reset the game
+                } else
                 if (act === 'increaseFutility') {
                     window.state.increaseFutility(2);  // Call state function to update futility
                 } else if (act === 'decreaseFutility') {

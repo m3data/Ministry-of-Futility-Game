@@ -1187,6 +1187,6 @@ scene description: ;Your attempts at meaningful contributions have been futile! 
 context: ;End of the line or is there some wiser paths to find as you do the futility grind?;
 
 Choices:
-- Play again?: Start; None
+- Play again?: Start; resetGame
 
 # PLOT_END
