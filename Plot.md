@@ -827,6 +827,27 @@ Choices:
 - Stay in the garden and contemplate: Garden Woo Woo Contemplation; increaseWisdom, increaseWoo
 - Go back to your cubicle: Work Cubicle Psychadelia; increaseFutility
 
+## Garden Woo Woo Contemplation
+title: ;The woo woo garden;
+location: ;Ministry Garden;
+scene description: ;You sit in the garden, surrounded by the woo woo energy of the mushroom. The gnome looks at you with a knowing smile, as if it understands the depths of your soul.;
+context: ;You sit quietly, your body vibrating, and contemplate the insights granted to you by the woo woo mushroom.;
+
+Choices:
+- Embrace the woo woo energy: Woo Woo Embrace; increaseWisdom, increaseWoo
+- Return to your cubicle: Work Cubicle Psychadelia; increaseFutility
+
+## Woo Woo Embrace
+title: ;The woo woo embrace;
+location: ;Ministry Garden;
+scene description: ;You embrace the woo woo energy of the garden, feeling a sense of connection to the universe and the absurdity of the Ministry. The gnome nods approvingly, as if it knows you've found your place in the world.;
+context: ;You're filled with a sense of peace and clarity, knowing that you've found your true path. You are ready to face the challenges of the Ministry with a new perspective.;
+
+Choices:
+- Seek out the Deputy Vice Chair of the Committee of Workplace Relations: Basement Search; increaseWisdom
+- Return to your cubicle: Work Cubicle Psychadelia; increaseFutility
+- Leave the Ministry and start a new life: Wise End; increaseWisdom
+
 ## Revolution
 title: ;The call to action;
 location: ;Department of Existential Dread;
