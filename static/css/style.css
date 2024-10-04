@@ -12,6 +12,7 @@
 body {
   font-family: 'Roboto Mono', monospace;
   background-color: var(--background-color);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='100%25' height='100%25' fill='url(%23bureaucracy-pattern)'/%3E%3C/svg%3E");
   color: var(--primary-color);
   line-height: 1.6;
   margin: 0;
@@ -83,6 +84,70 @@ p {
   display: inline-block;
 }
 
+.glitch-text::before,
+.glitch-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.glitch-text::before {
+  left: 2px;
+  text-shadow: -2px 0 #ff00c1;
+  clip: rect(44px, 450px, 56px, 0);
+  animation: glitch-anim 5s infinite linear alternate-reverse;
+}
+
+.glitch-text::after {
+  left: -2px;
+  text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
+  clip: rect(44px, 450px, 56px, 0);
+  animation: glitch-anim2 5s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim {
+  0% {
+    clip: rect(7px, 9999px, 63px, 0);
+    transform: skew(0.05deg);
+  }
+  5% {
+    clip: rect(29px, 9999px, 95px, 0);
+    transform: skew(0.66deg);
+  }
+  10% {
+    clip: rect(65px, 9999px, 4px, 0);
+    transform: skew(0.9deg);
+  }
+  /* ... continue with more keyframes ... */
+  100% {
+    clip: rect(53px, 9999px, 71px, 0);
+    transform: skew(0.59deg);
+  }
+}
+
+@keyframes glitch-anim2 {
+  0% {
+    clip: rect(65px, 9999px, 99px, 0);
+    transform: skew(0.63deg);
+  }
+  5% {
+    clip: rect(90px, 9999px, 18px, 0);
+    transform: skew(0.08deg);
+  }
+  10% {
+    clip: rect(63px, 9999px, 6px, 0);
+    transform: skew(0.01deg);
+  }
+  /* ... continue with more keyframes ... */
+  100% {
+    clip: rect(55px, 9999px, 46px, 0);
+    transform: skew(0.01deg);
+  }
+}
+
 /* Sticky header styling */
 .sticky-header {
   position: sticky;
@@ -111,16 +176,19 @@ p {
 .game-metrics {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .metric {
-  width: 32%; /* Adjusted width for 3 metrics */
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .meter-background {
-  width: 100%;
-  height: 20px; 
+  flex-grow: 1;
+  height: 20px;
   background-color: #ddd;
   border: 1px solid #000;
   position: relative;
@@ -131,6 +199,16 @@ p {
   width: 0;
   transition: width 0.3s ease;
   position: relative;
+}
+
+.meter-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.meter-icon use {
+  stroke: white;
 }
 
 #futility-meter { background-color: #fc8080; }
@@ -148,6 +226,18 @@ p {
   font-weight: bold;
   font-size: 0.8em; /* Smaller font size for compact header */
   text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+#futility-icon path {
+  stroke: #fc8080;
+}
+
+#wisdom-icon circle {
+  stroke: #9d00ff;
+}
+
+#woo-icon path {
+  stroke: #ff00ff;
 }
 
 /* Container styling */

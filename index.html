@@ -32,12 +32,41 @@
     <script src="static/js/butterflyEffect.js" defer></script>
 </head>
 <body>
+  <svg width="0" height="0" style="position: absolute;">
+    <defs>
+      <pattern id="bureaucracy-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+        <path d="M10 10 L20 10 L20 20 L10 20 Z" fill="none" stroke="#ddd" stroke-width="1"/>
+        <circle cx="50" cy="50" r="5" fill="none" stroke="#ddd" stroke-width="1"/>
+        <path d="M80 80 L90 80 L85 90 Z" fill="none" stroke="#ddd" stroke-width="1"/>
+      </pattern>
+      <symbol id="futility-icon" viewBox="0 0 24 24">
+        <path d="M12 2 L12 22 M2 12 L22 12" stroke="black" stroke-width="2" fill="none">
+          <animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="10s" repeatCount="indefinite"/>
+        </path>
+      </symbol>
+      
+      <symbol id="wisdom-icon" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" stroke="black" stroke-width="2" fill="none">
+          <animateTransform attributeName="transform" type="rotate" from="0 12 12" to="-360 12 12" dur="15s" repeatCount="indefinite"/>
+        </circle>
+      </symbol>
+      
+      <symbol id="woo-icon" viewBox="0 0 24 24">
+        <path d="M12 20c-3.3 0-6-2.7-6-6 0-4 6-12 6-12s6 8 6 12c0 3.3-2.7 6-6 6z" stroke="black" stroke-width="2" fill="none">
+          <animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="8s" repeatCount="indefinite"/>
+        </path>
+        <path d="M6 14h12" stroke="black" stroke-width="2" fill="none"/>
+        <path d="M12 14v6" stroke="black" stroke-width="2" fill="none"/>
+      </symbol>
+    </defs>
+  </svg>
   <header class="sticky-header">
     <div class="header-content">
       <h1 class="header-title glitch-text" data-text="Ministry of Futility">Ministry of Futility</h1>
       <h2 class="header-subtitle">A Bureacratic Nightmare</h2>
       <div class="game-metrics">
         <div class="metric">
+          <svg class="meter-icon"><use href="#futility-icon"/></svg>
           <div class="meter-background">
             <div id="futility-meter" class="meter">
               <span class="metric-label">Futility</span>
@@ -45,6 +74,7 @@
           </div>
         </div>
         <div class="metric">
+          <svg class="meter-icon"><use href="#wisdom-icon"/></svg>
           <div class="meter-background">
             <div id="wisdom-meter" class="meter">
               <span class="metric-label">Wisdom</span>
@@ -52,6 +82,7 @@
           </div>
         </div>
         <div class="metric">
+          <svg class="meter-icon"><use href="#woo-icon"/></svg>
           <div class="meter-background">
             <div id="woo-meter" class="meter">
               <span class="metric-label">Woo</span>
