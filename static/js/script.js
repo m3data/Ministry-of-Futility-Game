@@ -145,7 +145,7 @@ function loadScene(sceneName) {
                 if (filteredChoices.length === 0) {
                     filteredChoices.push({
                         text: "Continue",
-                        target: "exhuasted", // Exhausted all choices scene ending
+                        target: "exhausted", // Exhausted all choices scene ending
                         actions: []
                     });
                 }
