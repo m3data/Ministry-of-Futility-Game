@@ -5,5 +5,6 @@ window.sceneContent = {
   context: 'The lobby is vast and disorienting, with harsh lighting and a sense of unease. You see a reception desk in the distance and corridors leading off in different directions. The air is filled with the sound of shuffling papers and the distant hum of computers.',
   choices: [
     { text: 'Enter the lobby', target: 'lobby', actions: ['increaseWisdom'] },
+    { text: 'Turn back and leave', target: 'null', actions: ['quitGame'] },
   ]
 };

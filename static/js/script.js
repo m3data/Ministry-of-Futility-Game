@@ -67,6 +67,7 @@
             updateFutilityMeter();
             updateWisdomMeter();
             updateWooMeter();
+            resetChoices();  // Reset all tracked choices
         }
     };
 
@@ -115,6 +116,8 @@
 // The loadScene function is responsible for loading the scene script and updating the UI
 function loadScene(sceneName) {
     console.log("Loading scene:", sceneName);
+    currentSceneName = sceneName; // Set the current scene name
+    console.log("Current scene name set to:", currentSceneName); // Debugging line
 
     // Load the scene script
     const sceneScript = document.createElement('script');
@@ -124,6 +127,7 @@ function loadScene(sceneName) {
 
         if (window.sceneContent) {
             const { title, context, choices, location, sceneDescription } = window.sceneContent;
+            
             // Display only the scene description initially
             const sceneHTML = `
             <h2 id="location-title">${location}</h2>
@@ -134,13 +138,25 @@ function loadScene(sceneName) {
 
             // Attach event listener to the Next button
             document.getElementById('next-button').addEventListener('click', () => {
-            displayStoryContent(title, context, choices);
+                // Filter choices before displaying
+                const filteredChoices = filterChoices(sceneName, choices);
+                
+                // If all choices have been made, provide a "Continue" option
+                if (filteredChoices.length === 0) {
+                    filteredChoices.push({
+                        text: "Continue",
+                        target: "exhuasted", // Exhausted all choices scene ending
+                        actions: []
+                    });
+                }
+                
+                displayStoryContent(title, context, filteredChoices);
             });
 
             window.sceneContent = null;
             scenesVisited += 1;
             if (scenesVisited % 13 === 0) {
-            selfReflection();
+                selfReflection();
             }
         }
     };
@@ -162,8 +178,13 @@ function displayStoryContent(title, context, choices) {
   attachEventListeners();
 }
     // Handle button clicks
-    function handleButtonClick(actions, target) {
-        console.log('Button clicked:', actions, target); // Debugging line
+    function handleButtonClick(actions, target, choiceText) {
+        console.log('Button clicked:', actions, target, choiceText); // Debugging line
+
+        // Record the player's choice
+    if (currentSceneName && choiceText) {
+        recordChoice(currentSceneName, choiceText);
+    }
         
         // Execute each action in the list of actions
         if (Array.isArray(actions)) {
@@ -222,7 +243,8 @@ function displayStoryContent(title, context, choices) {
             console.log("Button actions:", actions);  // Log button actions
             console.log("Button target:", target);  // Log button targets
             button.addEventListener('click', function() {
-                handleButtonClick(actions, target);
+                const choiceText = this.textContent.trim();
+                handleButtonClick(actions, target, choiceText);
             });
         });
     }

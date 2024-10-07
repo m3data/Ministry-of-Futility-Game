@@ -1,8 +1,8 @@
 window.sceneContent = {
   title: 'The lobby of the Ministry of Futility',
   location: 'Ministry Lobby',
-  sceneDescription: 'You now stand in the lobby, surrounded by the oppressive atmosphere of bureaucracy. The reception desk is ahead, and corridors lead off in different directions.',
-  context: 'You slowly move toward the bored-looking receptionist that is sitting behind a desk, barely acknowledging your presence. There are three corridors leading off in different directions, each labeled with a sign.',
+  sceneDescription: 'You stand in the lobby, feeling increasingly uneasy. The reception desk is ahead.',
+  context: 'You slowly move toward the bored-looking receptionist that is sitting behind a desk, barely acknowledging your presence. There are corridors leading off in different directions, each labeled with a sign.',
   choices: [
     { text: 'Approach the receptionist', target: 'reception', actions: [] },
     { text: 'Take the corridor labeled Department of Circular Logic', target: 'circular-logic', actions: ['increaseWisdom'] },

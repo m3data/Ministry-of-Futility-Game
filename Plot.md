@@ -70,12 +70,13 @@ context: ;The lobby is vast and disorienting, with harsh lighting and a sense of
 
 Choices:
 - Enter the lobby: Lobby; increaseWisdom
+- Turn back and leave: None; quitGame
 
 ## Lobby
 title: ;The lobby of the Ministry of Futility;
 location: ;Ministry Lobby;
-scene description: ;You now stand in the lobby, surrounded by the oppressive atmosphere of bureaucracy. The reception desk is ahead, and corridors lead off in different directions.;
-context: ;You slowly move toward the bored-looking receptionist that is sitting behind a desk, barely acknowledging your presence. There are three corridors leading off in different directions, each labeled with a sign.;
+scene description: ;You stand in the lobby, feeling increasingly uneasy. The reception desk is ahead.;
+context: ;You slowly move toward the bored-looking receptionist that is sitting behind a desk, barely acknowledging your presence. There are corridors leading off in different directions, each labeled with a sign.;
 
 Choices:
 - Approach the receptionist: Reception
@@ -1192,10 +1193,19 @@ Choices:
 - Apply again: Start; None
 - Walk away: GAME OVER; None
 
+## Exhausted
+title: ;You've exhausted all choices;
+location: ;Ministry Lobby;
+scene description: ;You stand in the lobby, dazed and confused, thinking to yourself WTF has just happened!!?;
+context: ;Remember, in the game of futility, the only winning move is not to play... or is it?;
+
+Choices:
+- Play again?: Start; None
+
 ## GAME OVER
 title: ;To play or not to play;
 location: ;noosphere;
-scene descriptions: ;Thank you for playing "Ministry of Futility: A Bureaucratic Nightmare";
+scene description: ;Thank you for playing "Ministry of Futility: A Bureaucratic Nightmare";
 context: ;Remember, in the game of futility, the only winning move is not to play... or is it?;
 
 Choices:
