@@ -252,6 +252,23 @@ function displayStoryContent(title, context, choices) {
     // Initialize the game
     function initGame() {
         window.state.go("start"); // Start the game with the Start scene
+        
+        // Add event listener for reset button
+        const resetButton = document.getElementById('reset-button');
+        resetButton.addEventListener('click', resetGame);
+    }
+    
+    function resetGame() {
+        // Reset all game states
+        window.state.resetGame();
+        
+        // Reload the initial scene
+        window.state.go("start");
+        
+        // Trigger glitch effect for visual feedback
+        triggerGlitchTransition(() => {
+            console.log("Game reset complete");
+        });
     }
 
     // Run initialization when the DOM is fully loaded
