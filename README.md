@@ -97,8 +97,8 @@ Contributions are welcome! Feel free to fork the repository and submit pull requ
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/yourusername/Ministry-of-Futility.git
-   cd Ministry-of-Futility
+   git clone https://github.com/yourusername/Ministry-of-Futility-Game.git
+   cd Ministry-of-Futility-Game
    ```
 
 2. **Install Python Dependencies** (if any):
@@ -117,7 +117,7 @@ Contributions are welcome! Feel free to fork the repository and submit pull requ
    ```
 
 5. **Run the Game**:
-   - Open `index.html` in a web browser to play the game.
+   - Simply open `index.html` in a web browser to play the game.
 
 ---
 
