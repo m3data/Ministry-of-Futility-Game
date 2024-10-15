@@ -275,6 +275,25 @@ p {
     margin-top: 5px;
     font-size: 0.7em;
   }
+  .header-title {
+    font-size: 1.4em;
+  }
+
+  .header-subtitle {
+    font-size: 0.9em;
+  }
+
+  .sticky-header {
+    padding: 5px;
+  }
+
+  .meter-background {
+    height: 15px;
+  }
+
+  .metric-label {
+    font-size: 0.7em;
+  }
 }
 
 /* Brutalist box styling */
